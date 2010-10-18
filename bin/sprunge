@@ -1,0 +1,122 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+package sprunge;
+BEGIN {
+  $sprunge::VERSION = '0.001';
+}
+# ABSTRACT: paste to (and read from) sprunge.us from the command line
+
+use App::Pastebin::sprunge;
+use Getopt::Long;
+use Pod::Usage;
+
+my %opts = ();
+GetOptions( \%opts,
+    'help|?',
+    'version',
+    'lang|syntax=s',
+);
+
+pod2usage(
+    -verbose => 2,
+) if $opts{'help'};
+
+
+App::Pastebin::sprunge->new()->run(\%opts, \@ARGV);
+
+__END__
+=pod
+
+=head1 NAME
+
+sprunge - paste to (and read from) sprunge.us from the command line
+
+=head1 VERSION
+
+version 0.001
+
+=head1 SYNOPSIS
+
+B<sprunge> B<--lang> I<lang> < file
+
+ps aux | B<sprunge>
+
+B<sprunge> I<ID>
+
+B<sprunge> I<--help>
+
+Options:
+    --lang      Specifies the language for syntax highlighting
+    --help      Shows this man page
+    --version   Shows the version of this program and supporting libraries
+
+=head1 DESCRIPTION
+
+B<sprunge> is a simple command line program to write to (and read from)
+the pastebin L<http://sprunge.us>.
+
+=head2 Writing
+
+Provide input on stdin to B<sprunge> to paste it to the pastebin. Provide the
+B<--lang> option to specify syntax highlighting to apply.
+
+    ps aux | sprunge
+    sprunge --lang pl < file.pl
+
+=head2 Reading
+
+Run sprunge with a URL or paste ID to output the text to stdout.
+
+=head1 OPTIONS
+
+=over 4
+
+=item B<--help>, -h, -?
+
+Opens this man page and exits.
+
+=item B<--version>
+
+Prints the version of this program and supporting libraries.
+
+=item B<--lang>, --syntax
+
+Specifies the syntax highlighting type to use. sprunge.us allows any syntax
+highlighting available from L<Pygments|http://pygments.org/> to be applied
+to any paste, so you can change this at any time by altering the URI parameter.
+
+=back
+
+=head1 AVAILABILITY
+
+The latest version of this module is available from the Comprehensive Perl
+Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
+site near you, or see L<http://search.cpan.org/dist/App-Pastebin-sprunge/>.
+
+The development version lives at L<http://github.com/doherty/App-Pastebin-sprunge>
+and may be cloned from L<git://github.com/doherty/App-Pastebin-sprunge>.
+Instead of sending patches, please fork this project using the standard
+git and github infrastructure.
+
+=head1 BUGS AND LIMITATIONS
+
+No bugs have been reported.
+
+Please report any bugs or feature requests through the web interface at
+L<http://github.com/doherty/App-Pastebin-sprunge/issues>.
+
+=head1 AUTHOR
+
+Mike Doherty <doherty@cs.dal.ca>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is Copyright (c) 2010 by Mike Doherty.
+
+This is free software, licensed under:
+
+  The GNU General Public License, Version 3, June 2007
+
+=cut
+
