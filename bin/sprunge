@@ -3,7 +3,7 @@ use strict;
 use warnings;
 package sprunge;
 BEGIN {
-  $sprunge::VERSION = '0.001';
+  $sprunge::VERSION = '0.002';
 }
 # ABSTRACT: paste to (and read from) sprunge.us from the command line
 
@@ -34,7 +34,7 @@ sprunge - paste to (and read from) sprunge.us from the command line
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 
@@ -67,6 +67,8 @@ B<--lang> option to specify syntax highlighting to apply.
 =head2 Reading
 
 Run sprunge with a URL or paste ID to output the text to stdout.
+
+    sprunge H2gc | less
 
 =head1 OPTIONS
 

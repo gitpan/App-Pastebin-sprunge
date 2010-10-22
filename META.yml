@@ -5,7 +5,7 @@ author:
 build_requires:
   File::Find: 0
   File::Temp: 0
-  Test::More: 0
+  Test::More: 0.82
 configure_requires:
   ExtUtils::MakeMaker: 6.31
 dynamic_config: 0
@@ -26,4 +26,4 @@ requires:
 resources:
   bugtracker: http://github.com/doherty/App-Pastebin-sprunge/issues
   repository: http://github.com/doherty/App-Pastebin-sprunge
-version: 0.001
+version: 0.002

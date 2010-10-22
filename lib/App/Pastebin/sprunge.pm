@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package App::Pastebin::sprunge;
 BEGIN {
-  $App::Pastebin::sprunge::VERSION = '0.001';
+  $App::Pastebin::sprunge::VERSION = '0.002';
 }
 # ABSTRACT: Application class for pasting to and reading from sprunge.us
 
@@ -62,7 +62,7 @@ App::Pastebin::sprunge - Application class for pasting to and reading from sprun
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 
