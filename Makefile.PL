@@ -9,8 +9,8 @@ use ExtUtils::MakeMaker 6.31;
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'Application class for pasting to and reading from sprunge.us',
-  'AUTHOR' => 'Mike Doherty <doherty@cs.dal.ca>',
+  'ABSTRACT' => 'application class for pasting to and reading from sprunge.us',
+  'AUTHOR' => 'Mike Doherty <doherty@cpan.org>',
   'BUILD_REQUIRES' => {
     'File::Find' => '0',
     'File::Temp' => '0',
@@ -33,7 +33,7 @@ my %WriteMakefileArgs = (
     'WWW::Pastebin::Sprunge::Create' => '0',
     'WWW::Pastebin::Sprunge::Retrieve' => '0'
   },
-  'VERSION' => '0.002',
+  'VERSION' => '0.003',
   'test' => {
     'TESTS' => 't/*.t'
   }

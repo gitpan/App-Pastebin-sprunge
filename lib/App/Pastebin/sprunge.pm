@@ -2,9 +2,9 @@ use strict;
 use warnings;
 package App::Pastebin::sprunge;
 BEGIN {
-  $App::Pastebin::sprunge::VERSION = '0.002';
+  $App::Pastebin::sprunge::VERSION = '0.003';
 }
-# ABSTRACT: Application class for pasting to and reading from sprunge.us
+# ABSTRACT: application class for pasting to and reading from sprunge.us
 
 
 sub new {
@@ -56,13 +56,15 @@ sub run {
 
 =pod
 
+=encoding utf-8
+
 =head1 NAME
 
-App::Pastebin::sprunge - Application class for pasting to and reading from sprunge.us
+App::Pastebin::sprunge - application class for pasting to and reading from sprunge.us
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 
@@ -137,7 +139,7 @@ L<http://github.com/doherty/App-Pastebin-sprunge/issues>.
 
 =head1 AUTHOR
 
-Mike Doherty <doherty@cs.dal.ca>
+Mike Doherty <doherty@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 

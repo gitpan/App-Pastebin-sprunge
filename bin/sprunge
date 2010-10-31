@@ -3,7 +3,7 @@ use strict;
 use warnings;
 package sprunge;
 BEGIN {
-  $sprunge::VERSION = '0.002';
+  $sprunge::VERSION = '0.003';
 }
 # ABSTRACT: paste to (and read from) sprunge.us from the command line
 
@@ -28,28 +28,22 @@ App::Pastebin::sprunge->new()->run(\%opts, \@ARGV);
 __END__
 =pod
 
+=encoding utf-8
+
 =head1 NAME
 
 sprunge - paste to (and read from) sprunge.us from the command line
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 
-B<sprunge> B<--lang> I<lang> < file
-
-ps aux | B<sprunge>
-
-B<sprunge> I<ID>
-
-B<sprunge> I<--help>
-
-Options:
-    --lang      Specifies the language for syntax highlighting
-    --help      Shows this man page
-    --version   Shows the version of this program and supporting libraries
+    sprunge --lang lang < file
+    ps aux | sprunge
+    sprunge ID
+    sprunge --help
 
 =head1 DESCRIPTION
 
@@ -110,7 +104,7 @@ L<http://github.com/doherty/App-Pastebin-sprunge/issues>.
 
 =head1 AUTHOR
 
-Mike Doherty <doherty@cs.dal.ca>
+Mike Doherty <doherty@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 

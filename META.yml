@@ -1,7 +1,7 @@
 ---
-abstract: 'Application class for pasting to and reading from sprunge.us'
+abstract: 'application class for pasting to and reading from sprunge.us'
 author:
-  - 'Mike Doherty <doherty@cs.dal.ca>'
+  - 'Mike Doherty <doherty@cpan.org>'
 build_requires:
   File::Find: 0
   File::Temp: 0
@@ -26,4 +26,4 @@ requires:
 resources:
   bugtracker: http://github.com/doherty/App-Pastebin-sprunge/issues
   repository: http://github.com/doherty/App-Pastebin-sprunge
-version: 0.002
+version: 0.003

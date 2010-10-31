@@ -1,5 +1,8 @@
 Changelog for App::Pastebin::sprunge
 
+0.003     2010-10-31
+ * Fixed documentation formatting
+
 0.002     2010-10-21
  * Tweaked documentation
  * Require minimum version of Test::More to resolve test failures
