@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package App::Pastebin::sprunge;
 BEGIN {
-  $App::Pastebin::sprunge::VERSION = '0.003';
+  $App::Pastebin::sprunge::VERSION = '0.004';
 }
 # ABSTRACT: application class for pasting to and reading from sprunge.us
 
@@ -64,7 +64,7 @@ App::Pastebin::sprunge - application class for pasting to and reading from sprun
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =head1 SYNOPSIS
 
@@ -125,8 +125,8 @@ The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
 site near you, or see L<http://search.cpan.org/dist/App-Pastebin-sprunge/>.
 
-The development version lives at L<http://github.com/doherty/App-Pastebin-sprunge>
-and may be cloned from L<git://github.com/doherty/App-Pastebin-sprunge>.
+The development version lives at L<http://github.com/doherty/App-Pastebin-sprunge.git>
+and may be cloned from L<git://github.com/doherty/App-Pastebin-sprunge.git>.
 Instead of sending patches, please fork this project using the standard
 git and github infrastructure.
 
@@ -143,11 +143,10 @@ Mike Doherty <doherty@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2010 by Mike Doherty.
+This software is copyright (c) 2010 by Mike Doherty.
 
-This is free software, licensed under:
-
-  The GNU General Public License, Version 3, June 2007
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut
 

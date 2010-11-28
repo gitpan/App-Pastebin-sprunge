@@ -23,7 +23,7 @@ my %WriteMakefileArgs = (
   'EXE_FILES' => [
     'bin/sprunge'
   ],
-  'LICENSE' => 'gpl',
+  'LICENSE' => 'perl',
   'NAME' => 'App::Pastebin::sprunge',
   'PREREQ_PM' => {
     'File::Basename' => '0',
@@ -33,7 +33,7 @@ my %WriteMakefileArgs = (
     'WWW::Pastebin::Sprunge::Create' => '0',
     'WWW::Pastebin::Sprunge::Retrieve' => '0'
   },
-  'VERSION' => '0.003',
+  'VERSION' => '0.004',
   'test' => {
     'TESTS' => 't/*.t'
   }
