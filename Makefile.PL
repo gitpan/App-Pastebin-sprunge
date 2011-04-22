@@ -9,12 +9,13 @@ use ExtUtils::MakeMaker 6.31;
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'application class for pasting to and reading from sprunge.us',
+  'ABSTRACT' => 'application for pasting to and reading from sprunge.us',
   'AUTHOR' => 'Mike Doherty <doherty@cpan.org>',
   'BUILD_REQUIRES' => {
     'File::Find' => '0',
     'File::Temp' => '0',
-    'Test::More' => '0.82'
+    'Test::More' => '0.82',
+    'Test::Output' => '0'
   },
   'CONFIGURE_REQUIRES' => {
     'ExtUtils::MakeMaker' => '6.31'
@@ -26,14 +27,13 @@ my %WriteMakefileArgs = (
   'LICENSE' => 'perl',
   'NAME' => 'App::Pastebin::sprunge',
   'PREREQ_PM' => {
-    'File::Basename' => '0',
-    'File::Slurp' => '0',
     'Getopt::Long' => '0',
     'Pod::Usage' => '0',
     'WWW::Pastebin::Sprunge::Create' => '0',
-    'WWW::Pastebin::Sprunge::Retrieve' => '0'
+    'WWW::Pastebin::Sprunge::Retrieve' => '0',
+    'perl5i::2' => '0'
   },
-  'VERSION' => '0.004',
+  'VERSION' => '0.005',
   'test' => {
     'TESTS' => 't/*.t'
   }
