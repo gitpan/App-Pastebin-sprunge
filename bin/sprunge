@@ -2,7 +2,7 @@
 package sprunge;
 use perl5i::2;
 # ABSTRACT: command-line read-write access to sprunge.us
-our $VERSION = '0.005'; # VERSION
+our $VERSION = '0.006'; # VERSION
 
 use App::Pastebin::sprunge;
 use Getopt::Long;
@@ -39,7 +39,7 @@ sprunge - command-line read-write access to sprunge.us
 
 =head1 VERSION
 
-version 0.005
+version 0.006
 
 =head1 SYNOPSIS
 
@@ -88,6 +88,8 @@ to any paste, so you can change this at any time by altering the URI parameter.
 =back
 
 =head1 AVAILABILITY
+
+The project homepage is L<http://p3rl.org/App::Pastebin::sprunge>.
 
 The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
