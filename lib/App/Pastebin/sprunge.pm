@@ -1,7 +1,7 @@
 package App::Pastebin::sprunge;
 use perl5i::2;
 # ABSTRACT: application for pasting to and reading from sprunge.us
-our $VERSION = '0.006'; # VERSION
+our $VERSION = '0.007'; # VERSION
 
 
 method new ($class:) {
@@ -49,7 +49,7 @@ App::Pastebin::sprunge - application for pasting to and reading from sprunge.us
 
 =head1 VERSION
 
-version 0.006
+version 0.007
 
 =head1 SYNOPSIS
 
