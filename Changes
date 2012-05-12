@@ -1,5 +1,8 @@
 Changelog for App-Pastebin-sprunge
 
+0.008     2012-05-12
+ * Don't use perl5i - too slow
+
 0.007     2011-04-29
  * Looser test validation to catch more erroneously-failing smokers
 

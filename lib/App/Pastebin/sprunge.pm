@@ -1,10 +1,15 @@
 package App::Pastebin::sprunge;
-use perl5i::2;
+use strict;
+use warnings;
+use v5.10.1;
+
 # ABSTRACT: application for pasting to and reading from sprunge.us
-our $VERSION = '0.007'; # VERSION
+our $VERSION = '0.008'; # VERSION
 
 
-method new ($class:) {
+sub new {
+    my $class = shift;
+
     my $self;
     if (@ARGV) {                # READ
         $self->{paste_id} = shift @ARGV;
@@ -19,7 +24,10 @@ method new ($class:) {
 }
 
 
-method run($lang) {
+sub run {
+    my $self = shift;
+    my $lang = shift;
+
     if ($self->{paste_id}) {    # READ
         $self->{reader}->retrieve($self->{paste_id})
             or warn "Reading paste $self->{paste_id} failed: "
@@ -38,6 +46,8 @@ method run($lang) {
     return;
 }
 
+1;
+
 __END__
 =pod
 
@@ -49,7 +59,7 @@ App::Pastebin::sprunge - application for pasting to and reading from sprunge.us
 
 =head1 VERSION
 
-version 0.007
+version 0.008
 
 =head1 SYNOPSIS
 
@@ -63,7 +73,7 @@ B<App::Pastebin::sprunge> provides an application interface to
 L<WWW::Pastebin::Sprunge::Create> and L<WWW::Pastebin::Sprunge::Retrieve>,
 which allow creating and retrieving pastes on the L<http://sprunge.us> pastebin.
 
-This distribution provides an executable L<sprunge>, which provides a simple
+This distribution provides an executable C<sprunge>, which provides a simple
 command-line client for L<http://sprunge.us> using this library.
 
 =head1 METHODS
@@ -87,12 +97,7 @@ The project homepage is L<http://p3rl.org/App::Pastebin::sprunge>.
 
 The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
-site near you, or see L<http://search.cpan.org/dist/App-Pastebin-sprunge/>.
-
-The development version lives at L<http://github.com/doherty/App-Pastebin-sprunge>
-and may be cloned from L<git://github.com/doherty/App-Pastebin-sprunge.git>.
-Instead of sending patches, please fork this project using the standard
-git and github infrastructure.
+site near you, or see L<https://metacpan.org/module/App::Pastebin::sprunge/>.
 
 =head1 SOURCE
 
@@ -101,10 +106,8 @@ and may be cloned from L<git://github.com/doherty/App-Pastebin-sprunge.git>
 
 =head1 BUGS AND LIMITATIONS
 
-No bugs have been reported.
-
-Please report any bugs or feature requests through the web interface at
-L<https://github.com/doherty/App-Pastebin-sprunge/issues>.
+You can make new bug reports, and view existing ones, through the
+web interface at L<https://github.com/doherty/App-Pastebin-sprunge/issues>.
 
 =head1 AUTHOR
 
