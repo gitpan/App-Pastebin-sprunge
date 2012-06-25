@@ -4,7 +4,7 @@ use warnings;
 use v5.10.1;
 
 # ABSTRACT: application for pasting to and reading from sprunge.us
-our $VERSION = '0.008'; # VERSION
+our $VERSION = '0.009'; # VERSION
 
 
 sub new {
@@ -59,7 +59,7 @@ App::Pastebin::sprunge - application for pasting to and reading from sprunge.us
 
 =head1 VERSION
 
-version 0.008
+version 0.009
 
 =head1 SYNOPSIS
 

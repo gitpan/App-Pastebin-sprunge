@@ -8,7 +8,7 @@ use Getopt::Long;
 use Pod::Usage;
 
 # ABSTRACT: command-line read-write access to sprunge.us
-our $VERSION = '0.008'; # VERSION
+our $VERSION = '0.009'; # VERSION
 
 my %opts = ();
 GetOptions( \%opts,
@@ -41,7 +41,7 @@ sprunge - command-line read-write access to sprunge.us
 
 =head1 VERSION
 
-version 0.008
+version 0.009
 
 =head1 SYNOPSIS
 

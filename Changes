@@ -1,5 +1,8 @@
 Changelog for App-Pastebin-sprunge
 
+0.009     2012-06-25
+ * Update test suite [GH #3]
+
 0.008     2012-05-12
  * Don't use perl5i - too slow
 
