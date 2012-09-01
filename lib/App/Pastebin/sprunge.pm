@@ -4,7 +4,7 @@ use warnings;
 use v5.10.1;
 
 # ABSTRACT: application for pasting to and reading from sprunge.us
-our $VERSION = '0.009'; # VERSION
+our $VERSION = '0.010'; # VERSION
 
 
 sub new {
@@ -59,7 +59,7 @@ App::Pastebin::sprunge - application for pasting to and reading from sprunge.us
 
 =head1 VERSION
 
-version 0.009
+version 0.010
 
 =head1 SYNOPSIS
 
@@ -93,7 +93,7 @@ highlighting.
 
 =head1 AVAILABILITY
 
-The project homepage is L<http://p3rl.org/App::Pastebin::sprunge>.
+The project homepage is L<http://metacpan.org/release/App-Pastebin-sprunge/>.
 
 The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN

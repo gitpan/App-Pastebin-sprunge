@@ -8,7 +8,7 @@ use Getopt::Long;
 use Pod::Usage;
 
 # ABSTRACT: command-line read-write access to sprunge.us
-our $VERSION = '0.009'; # VERSION
+our $VERSION = '0.010'; # VERSION
 
 my %opts = ();
 GetOptions( \%opts,
@@ -41,7 +41,7 @@ sprunge - command-line read-write access to sprunge.us
 
 =head1 VERSION
 
-version 0.009
+version 0.010
 
 =head1 SYNOPSIS
 
@@ -91,7 +91,7 @@ to any paste, so you can change this at any time by altering the URI parameter.
 
 =head1 AVAILABILITY
 
-The project homepage is L<http://p3rl.org/App::Pastebin::sprunge>.
+The project homepage is L<http://metacpan.org/release/App-Pastebin-sprunge/>.
 
 The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN

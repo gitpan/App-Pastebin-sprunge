@@ -4,7 +4,7 @@
       "Mike Doherty <doherty@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300018, CPAN::Meta::Converter version 2.120630",
+   "generated_by" : "Dist::Zilla version 4.300021, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -46,6 +46,7 @@
          "requires" : {
             "File::Find" : "0",
             "File::Temp" : "0",
+            "IO::Socket::INET" : "0",
             "Test::More" : "0.82",
             "Test::Output" : "0"
          }
@@ -56,13 +57,13 @@
       "bugtracker" : {
          "web" : "https://github.com/doherty/App-Pastebin-sprunge/issues"
       },
-      "homepage" : "http://p3rl.org/App::Pastebin::sprunge",
+      "homepage" : "http://metacpan.org/release/App-Pastebin-sprunge/",
       "repository" : {
          "type" : "git",
          "url" : "git://github.com/doherty/App-Pastebin-sprunge.git",
          "web" : "https://github.com/doherty/App-Pastebin-sprunge"
       }
    },
-   "version" : "0.009"
+   "version" : "0.010"
 }
 
