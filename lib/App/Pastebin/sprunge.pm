@@ -4,7 +4,7 @@ use warnings;
 use v5.10.1;
 
 # ABSTRACT: application for pasting to and reading from sprunge.us
-our $VERSION = '0.010'; # VERSION
+our $VERSION = '0.011'; # VERSION
 
 
 sub new {
@@ -30,17 +30,13 @@ sub run {
 
     if ($self->{paste_id}) {    # READ
         $self->{reader}->retrieve($self->{paste_id})
-            or warn "Reading paste $self->{paste_id} failed: "
-            . $self->{reader}->error() . "\n"
-            and exit 1;
+            or die "Reading paste $self->{paste_id} failed: ", $self->{reader}->error();
         say $self->{reader};
     }
     else {                      # WRITE
         my $text = do { local $/; <STDIN> };
         $self->{writer}->paste($text, lang => $lang)
-            or warn 'Paste failed: '
-            . $self->{writer}->error() . "\n"
-            and exit 1;
+            or die 'Paste failed: ', $self->{writer}->error();
         say $self->{writer};
     }
     return;
@@ -49,6 +45,7 @@ sub run {
 1;
 
 __END__
+
 =pod
 
 =encoding utf-8
@@ -59,7 +56,7 @@ App::Pastebin::sprunge - application for pasting to and reading from sprunge.us
 
 =head1 VERSION
 
-version 0.010
+version 0.011
 
 =head1 SYNOPSIS
 
@@ -121,4 +118,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
